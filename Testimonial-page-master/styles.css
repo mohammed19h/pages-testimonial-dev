@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bage-bg: #F5C044;
+    --bg-color: #FFFFFF;
+    --cards-bg-color: #FAFAF9;
+    --headings: #18181B;
+    --text: #52525A;
+    --shadow-color: #D4D4D8;
+}
+
+body{
+    font-family: "Sora", sans-serif;
+    background-color: var(--cards-bg-color);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.content{
+    width: 50%;
+}
+
+.bage {
+    margin: 15px 0px;
+    background-color: var(--bage-bg);
+    padding: 16px;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+    border-radius: 50px;
+    line-height: 80px;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 80px;
+    color:  var(--headings);
+}
+
+.discription{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 40px;
+}
+
+.checked-list{
+    margin-top: 25px;
+      display: flex;
+      gap: 15px;
+}
+
+.list{
+    font-size: 0.85rem;
+    color: var(--text);
+    font-weight: 300px;
+}
+
+.cards-section{
+    width: 50%;
+}
+
+
+.cards{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.card1, .card2{
+    margin: 0px 10px;
+    background-color: var(--bg-color);
+    width:380px;
+    padding: 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 6px var(--shadow-color);
+}
+
+.card1{
+  transform: translateX(40%);
+}
+
+ 
+.logo{
+    display: flex;
+    gap: 15px;
+   padding: 5px;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 60px;
+    padding: 5px
+}
+
+.card-text{
+    font-size: 1rem;
+    line-height: 20px;
+    color: var(--text);
+    font-weight: 400;
+    padding: 5px;
+}
+
+/* Mobile Version  */
+@media screen  and (max-width: 768px){
+    .container{
+        margin: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%; 
+    }
+    .content{
+        padding: 15px;
+        width: 100%;
+    }
+    h1{
+        font-size: 34px;
+        line-height: 60px;
+    }
+
+    .discription{
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .checked-list{
+        margin-top: 15px;
+    }
+
+    .list{
+        font-size: 14px;
+    }
+
+    .cards-section{
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .card1, .card2{
+        margin: auto;
+        width: 100%;
+    }
+    .card1{
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+     .container{
+        margin: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%; 
+    }
+    .content{
+        padding: 5px;
+        width: 100%;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 80px;
+    }
+
+    .discription{
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .checked-list{
+        margin-top: 15px;
+    }
+
+    .list{
+        font-size: 1rem;
+    }
+
+    .cards-section{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card1, .card2{
+        margin: auto;
+        width: 65%;
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 40px;
+    }
+   
+    .card-text{
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 1324px) {
+    .container{
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+       align-items: center;
+       gap: 20px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .discription{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
